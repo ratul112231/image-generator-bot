@@ -3,9 +3,9 @@ const axios = require("axios");
 const TelegramBot = require("node-telegram-bot-api");
 const fetch = require("node-fetch");
 
-const token = "BOT_TOKEN";
-const admin = "USERID";
-const DATABASE_URL = "DATABASE_URL"; 
+const token = "8768608881:AAHFQZroxSFy8jTTvfB3APlMSEBTE19_65o";
+const admin = "6992010963";
+const DATABASE_URL = "https://fair-play-bos-default-rtdb.firebaseio.com/"; 
 const WEBHOOK_URL = "VERCEL_URL";
 
 const bot = new TelegramBot(token, { webHook: { port: false } });
@@ -118,11 +118,11 @@ app.post("/", async (req, res) => {
       const caption =
         "*👆 Here Is Your Generated Image\n\n💭 Your Prompt:*\n`" +
         msg.text +
-        "`\n\n*🧑‍💻 Created By:* [BOTNAME](https://telegram.dog/BOT_USERNAME)";
+        "`\n\n*🧑‍💻 Created By:* [BOTNAME](https://telegram.dog/Imagegeneratorbot129_bot)";
       const keyboard = {
         reply_markup: {
           inline_keyboard: [
-            [{ text: "🧑‍💻 Developer", url: "https://telegram.dog/DEVELOPER" }]
+            [{ text: "🧑‍💻 Developer", url: "https://telegram.dog/ratulislam1133" }]
           ]
         },
         parse_mode: "Markdown",
